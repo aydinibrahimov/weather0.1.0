@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo-weather-app?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+server:
+  port: 1515
+
+
+feign:
+  accessKey: 47f14fb4050b229fcf218bed13e6dbfe
+  url: http://api.weatherstack.com
